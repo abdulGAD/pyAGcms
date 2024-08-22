@@ -24,13 +24,14 @@ SECRET_KEY = '3y%(%fe__z2jg!!-ajtz!k#m*xtp(hr&8u^1vgia*iqskgq8-5ss'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
 ALLOWED_HOSTS = [
-    "*.railway.app" #https://agms.prod.railway.app
-                 ]
+    ".railway.app" # https://saas.prod.railway.app
+]
 if DEBUG:
-    ALLOWED_HOSTS += ["127.0.0.1"   ]
-    
+    ALLOWED_HOSTS += [
+        "127.0.0.1",
+        "localhost"
+    ]
 
 # Application definition
 
