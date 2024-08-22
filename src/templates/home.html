@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head_title %} HOME - {{ block.super }}  {% endblock head_title %}
+{% block content %}
+    <p>isinya</p>
+
+    {{ page_title }}
+    {{ request.user }}
+    {{ request.method }}
+    {{ request.user.is_authenticated }}
+    {{ querySet }} total {{ total }} percent {{ percent }}
+
+    {% include 'snippets/message.html' %}
+
+    
+
+{% endblock content %}
